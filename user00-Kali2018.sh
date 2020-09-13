@@ -1,11 +1,6 @@
 #!/bin/bash
 
 echo ""
-echo "Type in your password..."
-echo ""
-sudo -i
-
-echo ""
 echo "CONFIGURING /etc/apt/sources.list ..."
 echo ""
 sudo echo "deb http://http.kali.org/kali kali-rolling main contrib non-free" > /etc/apt/sources.list
