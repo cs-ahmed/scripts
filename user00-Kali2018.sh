@@ -38,3 +38,4 @@ sudo apt -y install open-vm-tools
 #echo "Don't forget to set screen resolution to 1280x800"
 
 echo "DON'T FORGET rm ./.bash_history"
+echo "Then, reboot"
