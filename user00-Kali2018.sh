@@ -33,7 +33,7 @@ sudo apt-get update
 echo ""
 echo "INSTALLING open-vm-tools..."
 echo ""
-sudo apt -y install open-vm-tools
+sudo apt install open-vm-tools
 
 #echo "Don't forget to set screen resolution to 1280x800"
 
