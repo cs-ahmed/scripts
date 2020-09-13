@@ -3,15 +3,15 @@
 echo ""
 echo "CONFIGURING /etc/apt/sources.list ..."
 echo ""
-sudo echo "deb http://http.kali.org/kali kali-rolling main contrib non-free" > /etc/apt/sources.list
-sudo echo "deb http://httpredir.debian.org/debian jessie main" > /etc/apt/sources.list
-sudo echo "deb-src http://httpredir.debian.org/debian jessie main" > /etc/apt/sources.list
-sudo echo "" > /etc/apt/sources.list
-sudo echo "deb http://httpredir.debian.org/debian jessie-updates main" > /etc/apt/sources.list
-sudo echo "deb-src http://httpredir.debian.org/debian jessie-updates main" > /etc/apt/sources.list
-sudo echo "" > /etc/apt/sources.list
-sudo echo "deb http://security.debian.org/ jessie/updates main" > /etc/apt/sources.list
-sudo echo "deb-src http://security.debian.org/ jessie/updates main" > /etc/apt/sources.list
+sudo echo "deb http://http.kali.org/kali kali-rolling main contrib non-free" >> /etc/apt/sources.list
+sudo echo "deb http://httpredir.debian.org/debian jessie main" >> /etc/apt/sources.list
+sudo echo "deb-src http://httpredir.debian.org/debian jessie main" >> /etc/apt/sources.list
+sudo echo "" >> /etc/apt/sources.list
+sudo echo "deb http://httpredir.debian.org/debian jessie-updates main" >> /etc/apt/sources.list
+sudo echo "deb-src http://httpredir.debian.org/debian jessie-updates main" >> /etc/apt/sources.list
+sudo echo "" >> /etc/apt/sources.list
+sudo echo "deb http://security.debian.org/ jessie/updates main" >> /etc/apt/sources.list
+sudo echo "deb-src http://security.debian.org/ jessie/updates main" >> /etc/apt/sources.list
 #sudo gedit /etc/apt/sources.list
 
 #deb http://httpredir.debian.org/debian jessie main
