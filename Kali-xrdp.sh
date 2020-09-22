@@ -28,5 +28,5 @@ apt-get install xrdp
 echo "TO START XRDP, TYPE"
 echo "service xrdp start"
 echo "service xrdp-sesman start"
-echo "TO CHECK XRDP, TYPE"
+echo "TO CHECK XRDP IS LISTENING, TYPE"
 echo "sudo netstat -tulpn | grep LISTEN"
