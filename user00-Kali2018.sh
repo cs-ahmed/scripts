@@ -35,6 +35,12 @@ echo ""
 sudo apt install open-vm-tools
 
 #echo "Don't forget to set screen resolution to 1280x800"
+echo ""
+echo ""
+echo "TO CHANGE RESOLUTION:"
+echo "sudo xrandr -s 1360x768"
+echo "OR"
+echo "sudo xrandr -s 1280x800"
 
 echo ""
 echo ""
