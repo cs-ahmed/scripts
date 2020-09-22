@@ -34,6 +34,12 @@ echo "INSTALLING open-vm-tools..."
 echo ""
 sudo apt install open-vm-tools
 
+
+echo ""
+echo "ENABLE ssh..."
+echo ""
+sudo systemctl start ssh
+
 #echo "Don't forget to set screen resolution to 1280x800"
 echo ""
 echo ""
