@@ -38,5 +38,10 @@ sudo apt install open-vm-tools
 
 echo ""
 echo ""
+echo "DON'T FORGET cd .."
+echo "DON'T FORGET rm -R scripts/"
+
+echo ""
+echo ""
 echo "DON'T FORGET rm ./.bash_history"
 echo "Then, reboot"
