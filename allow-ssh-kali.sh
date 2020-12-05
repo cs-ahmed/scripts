@@ -3,6 +3,7 @@
 echo ""
 echo "ENABLE ssh..."
 echo ""
+sudo systemctl enable ssh
 sudo systemctl start ssh
 
 echo ""
