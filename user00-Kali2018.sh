@@ -58,6 +58,11 @@ sudo service ssh restart
 echo "ALLOWED!"
 
 
+echo ""
+echo ""
+echo "Moving names.txt UP one directory ..."
+mv names.txt ../
+
 #echo "Don't forget to set screen resolution to 1280x800"
 echo ""
 echo ""
