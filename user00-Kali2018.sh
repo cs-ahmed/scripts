@@ -38,6 +38,12 @@ sudo apt install open-vm-tools
 echo ""
 echo "ENABLE ssh..."
 echo ""
+sudo systemctl enable ssh
+
+
+echo ""
+echo "START ssh..."
+echo ""
 sudo systemctl start ssh
 
 echo ""
