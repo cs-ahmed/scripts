@@ -38,12 +38,12 @@ echo ""
 echo ""
 echo "ALLOWING ROOT SSH ..."
 sudo echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
-sudo service ssh restart
+#sudo service ssh restart
 #echo "Go to /etc/ssh/sshd_config and look for the line 
 #echo "PermitRootLogin no"
 #echo "Change the no to yes and restart sshd"
 #echo "service ssh restart"
-echo "ALLOWED!"
+echo "Root Login ALLOWED!"
 
 
 echo ""
