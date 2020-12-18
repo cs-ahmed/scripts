@@ -32,7 +32,7 @@ sudo apt-get update
 echo ""
 echo "INSTALLING open-vm-tools..."
 echo ""
-sudo apt install open-vm-tools
+sudo apt -y install open-vm-tools
 
 echo ""
 echo ""
