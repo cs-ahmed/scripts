@@ -1,6 +1,14 @@
 #!/bin/bash
 
 echo ""
+echo "RENEW IP ..."
+echo ""
+dhclient -r
+dhclient
+dhclient -r
+dhclient
+
+echo ""
 echo "CONFIGURING /etc/apt/sources.list ..."
 echo ""
 sudo echo "deb http://httpredir.debian.org/debian jessie main" >> /etc/apt/sources.list
