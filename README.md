@@ -2,6 +2,9 @@
 
 This repo includes scripts for setting up machines
 
+### user00-Kali2018.sh
+
+This script is used to setup a Kali2018 VM to be ready for usage in a WiFi Hacking ESXi environment.
 
 ### Useful link:
 
