@@ -49,12 +49,14 @@ sudo apt -y install open-vm-tools
 echo ""
 echo ""
 echo "Moving names.txt UP one directory ..."
+cp names.txt ../Downloads/
 mv names.txt ../
 
 
 echo ""
 echo ""
 echo "Moving rockyou-75.txt UP one directory ..."
+cp rockyou-75.txt ../Downloads/
 mv rockyou-75.txt ../
 
 
