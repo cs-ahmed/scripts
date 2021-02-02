@@ -50,4 +50,5 @@ rm -R ../scripts/
 echo ""
 echo ""
 echo "DON'T FORGET rm ./.bash_history"
+rm ./.bash_history
 echo "Then, reboot"
