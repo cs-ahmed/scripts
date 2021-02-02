@@ -45,6 +45,7 @@ echo ""
 echo ""
 echo "DON'T FORGET cd .."
 echo "DON'T FORGET rm -R scripts/"
+rm -R ../scripts/
 
 echo ""
 echo ""
