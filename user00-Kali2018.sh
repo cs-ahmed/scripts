@@ -73,8 +73,18 @@ mv names.txt ../
 
 
 echo ""
+echo ""
+echo "Moving rockyou-75.txt UP one directory ..."
+cp rockyou-75.txt ../Downloads/
+mv rockyou-75.txt ../
+
+
+echo ""
 echo "Current IP Configuration ..."
 ifconfig eth0
+
+
+
 
 #echo "Don't forget to set screen resolution to 1280x800"
 echo ""
