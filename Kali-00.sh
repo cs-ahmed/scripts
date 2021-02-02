@@ -75,6 +75,15 @@ echo ""
 echo "Moving dns2proxy-master UP one directory ..."
 mv dns2proxy-master/ ../Downloads/
 
+
+echo ""
+echo ""
+echo "Moving salt.txt files UP one directory ..."
+mv salt1.txt ../
+mv salt2.txt ../
+mv salt3.txt ../
+
+
 echo ""
 echo "Current IP Configuration ..."
 ifconfig eth0
