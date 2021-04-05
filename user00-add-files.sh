@@ -1,5 +1,11 @@
 #!/bin/bash
 
+echo ""
+echo "ENABLE autologin on Kali Linux..."
+echo ""
+sudo echo "AutomaticLoginEnable = true" >> /etc/gdm3/daemon.conf
+sudo echo "AutomaticLogin = root" >> /etc/gdm3/daemon.conf
+
 ## Add dictionary files to user00-Kali2018 VMs
 
 echo ""
