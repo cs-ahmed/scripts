@@ -65,6 +65,11 @@ echo "START ssh..."
 echo ""
 sudo systemctl start ssh
 
+echo ""
+echo "ENABLE autologin on Kali Linux..."
+echo ""
+sudo echo "AutomaticLoginEnable = true" >> /etc/gdm3/daemon.conf
+sudo echo "AutomaticLogin = root" >> /etc/gdm3/daemon.conf
 
 echo ""
 echo ""
