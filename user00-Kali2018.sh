@@ -68,8 +68,8 @@ sudo systemctl start ssh
 echo ""
 echo "ENABLE autologin on Kali Linux..."
 echo ""
-sudo echo "AutomaticLoginEnable = true" >> /etc/gdm3/daemon.conf
-sudo echo "AutomaticLogin = root" >> /etc/gdm3/daemon.conf
+mv /etc/gdm3/daemon.conf /etc/gdm3/daemon-OLD.conf
+mv daemon.conf /etc/gdm3/
 
 echo ""
 echo ""
