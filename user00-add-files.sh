@@ -33,9 +33,9 @@ mv dns2proxy-master/ ../Downloads/
 echo ""
 echo ""
 echo "Moving salt.txt files UP one directory ..."
-mv salt1.txt ../
-mv salt2.txt ../
-mv salt3.txt ../
+mv hashes/salt1.txt ../
+mv hashes/salt2.txt ../
+mv hashes/salt3.txt ../
 
 echo ""
 echo "Current IP Configuration ..."
