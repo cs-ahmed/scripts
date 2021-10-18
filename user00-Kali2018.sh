@@ -69,7 +69,7 @@ echo ""
 echo "ENABLE autologin on Kali Linux..."
 echo ""
 mv /etc/gdm3/daemon.conf /etc/gdm3/daemon-OLD.conf
-mv daemon.conf /etc/gdm3/
+mv kali2018_autologin_files/daemon.conf /etc/gdm3/
 
 echo ""
 echo ""
