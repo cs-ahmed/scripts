@@ -85,6 +85,6 @@ rm -R ../scripts/
 
 echo ""
 echo ""
-echo "DON'T FORGET rm ./.bash_history"
-rm ./.bash_history
+echo "DON'T FORGET rm ./.zsh_history"
+rm ./.zsh_history
 echo "Then, reboot"
