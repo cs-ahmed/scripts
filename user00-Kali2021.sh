@@ -52,14 +52,14 @@ mv kali2021_autologin_files/lightdm-autologin /etc/pam.d/
 echo ""
 echo ""
 echo "Moving names.txt UP one directory ..."
-mv names.txt ../
+mv names.txt /root/
 
 
 echo ""
 echo ""
 echo "Moving rockyou-75.txt UP one directory ..."
-cp rockyou-75.txt ../Downloads/
-mv rockyou-75.txt ../
+cp rockyou-75.txt /root/Downloads/
+mv rockyou-75.txt /root/
 
 
 echo ""
@@ -69,7 +69,7 @@ ifconfig eth0
 
 
 
-#echo "Don't forget to set screen resolution to 1280x800"
+#echo "Don't forget to set screen resolution to 1360x768"
 echo ""
 echo ""
 echo "TO CHANGE RESOLUTION:"
