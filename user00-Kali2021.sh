@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "SETTING root PASSWORD TO toor"
+echo -e "toor\ntoor" | sudo passwd
 
 echo ""
 echo "Install gedit ..."
