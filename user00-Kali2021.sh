@@ -6,7 +6,7 @@ echo -e "toor\ntoor" | sudo passwd
 echo ""
 echo "Install gedit ..."
 echo ""
-apt install gedit
+apt install -y gedit
 
 
 echo ""
