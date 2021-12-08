@@ -44,7 +44,7 @@ echo ""
 mv /etc/lightdm/lightdm.conf /etc/lightdm/lightdm-OLD.conf
 mv kali2021_autologin_files/lightdm.conf /etc/lightdm/
 mv /etc/pam.d/lightdm-autologin /etc/pam.d/lightdm-autologin-OLD
-mv kali2021_autologin_files/lightdm.conf /etc/pam.d/
+mv kali2021_autologin_files/lightdm-autologin /etc/pam.d/
 
 
 echo ""
