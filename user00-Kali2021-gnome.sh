@@ -58,29 +58,29 @@ mv names.txt /root/
 
 echo ""
 echo ""
-echo "Moving rockyou-75.txt UP one directory ..."
-cp rockyou-75.txt /root/Downloads/
-mv rockyou-75.txt /root/
+echo "Moving rockyou-75.txt TO /root ..."
+cp rockyou-75.txt /root/Downloads
+mv rockyou-75.txt /root
 
 echo ""
 echo ""
-echo "Moving Heartbleed UP one directory ..."
-mv Heartbleed/ /root/Downloads/
+echo "Moving Heartbleed TO /root ..."
+mv Heartbleed/ /root/Downloads
 
 echo ""
 echo ""
-echo "Moving ModesofOperation UP one directory ..."
-mv ModesofOperation/ /root/Downloads/
+echo "Moving ModesofOperation TO /root ..."
+mv ModesofOperation/ /root/Downloads
 
 echo ""
 echo ""
-echo "Moving dns2proxy-master UP one directory ..."
-mv dns2proxy-master/ /root/Downloads/
+echo "Moving dns2proxy-master TO /root ..."
+mv dns2proxy-master/ /root/Downloads
 
 echo ""
 echo ""
-echo "Moving hashes UP one directory ..."
-mv hashes/ /root/
+echo "Moving hashes TO /root ..."
+mv hashes/ /root
 
 echo ""
 echo ""
