@@ -59,7 +59,7 @@ sudo mv names.txt /root/
 echo ""
 echo ""
 echo "Moving rockyou-75.txt TO /root ..."
-sudo cp rockyou-75.txt /root/Downloads/
+#sudo cp rockyou-75.txt /root/Downloads/
 sudo mv rockyou-75.txt /root/
 
 echo ""
@@ -84,7 +84,7 @@ sudo mv hashes/ /root/
 
 echo ""
 echo ""
-echo "Moving README_for_gnome.txt TO Desktop ..."
+echo "Moving README_for_gnome.txt TO /root ..."
 sudo mv kali2021_autologin_files/README_for_gnome.txt /root/
 
 echo ""
