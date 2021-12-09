@@ -46,46 +46,46 @@ sudo systemctl start ssh
 echo ""
 echo "ENABLE autologin on Kali Linux..."
 echo ""
-mv /etc/gdm3/daemon.conf /etc/gdm3/daemon-OLD.conf
-mv kali2021_autologin_files/daemon.conf /etc/gdm3/
+sudo mv /etc/gdm3/daemon.conf /etc/gdm3/daemon-OLD.conf
+sudo mv kali2021_autologin_files/daemon.conf /etc/gdm3/
 
 
 echo ""
 echo ""
 echo "Moving names.txt UP one directory ..."
-mv names.txt /root/
+sudo mv names.txt /root/
 
 
 echo ""
 echo ""
 echo "Moving rockyou-75.txt TO /root ..."
-cp rockyou-75.txt /root/Downloads
-mv rockyou-75.txt /root
+sudo cp rockyou-75.txt /root/Download/
+sudo mv rockyou-75.txt /root/
 
 echo ""
 echo ""
 echo "Moving Heartbleed TO /root ..."
-mv Heartbleed/ /root/Downloads
+sudo mv Heartbleed/ /root/Download/
 
 echo ""
 echo ""
 echo "Moving ModesofOperation TO /root ..."
-mv ModesofOperation/ /root/Downloads
+sudo mv ModesofOperation/ /root/Download/
 
 echo ""
 echo ""
 echo "Moving dns2proxy-master TO /root ..."
-mv dns2proxy-master/ /root/Downloads
+sudo mv dns2proxy-master/ /root/Download/
 
 echo ""
 echo ""
 echo "Moving hashes TO /root ..."
-mv hashes/ /root
+sudo mv hashes/ /root/
 
 echo ""
 echo ""
 echo "Moving README_for_gnome.txt TO Desktop ..."
-mv kali2021_autologin_files/README_for_gnome.txt /root/Desktop/
+sudo mv kali2021_autologin_files/README_for_gnome.txt /root/Desktop/
 
 echo ""
 echo "Current IP Configuration ..."
