@@ -75,8 +75,14 @@ echo "sudo xrandr -s 1280x800"
 
 echo ""
 echo ""
-echo "DON'T FORGET cd .."
-echo "DON'T FORGET rm -R scripts/"
+echo "Go to: SETTINGS > POWER"
+echo "1. Change Blank Screen to Never"
+echo "2. Change Automatic Suspend to Off"
+
+echo ""
+echo ""
+echo "REMOVING MYSELF!"
+echo "rm -R ../scripts/"
 rm -R ../scripts/
 
 echo ""
