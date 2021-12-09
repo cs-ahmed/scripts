@@ -57,6 +57,10 @@ echo "Moving rockyou-75.txt UP one directory ..."
 cp rockyou-75.txt /root/Downloads/
 mv rockyou-75.txt /root/
 
+echo ""
+echo ""
+echo "Moving README_for_gnome.txt TO Desktop ..."
+mv kali2021_autologin_files/README_for_gnome.txt /root/Desktop/
 
 echo ""
 echo "Current IP Configuration ..."
