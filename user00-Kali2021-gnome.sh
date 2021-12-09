@@ -16,6 +16,11 @@ dhclient -r
 dhclient
 
 echo ""
+echo "INSTALLING open-vm-tools..."
+echo ""
+sudo apt -y install open-vm-tools
+
+echo ""
 echo ""
 echo "ALLOWING ROOT SSH ..."
 sudo echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
@@ -56,6 +61,26 @@ echo ""
 echo "Moving rockyou-75.txt UP one directory ..."
 cp rockyou-75.txt /root/Downloads/
 mv rockyou-75.txt /root/
+
+echo ""
+echo ""
+echo "Moving Heartbleed UP one directory ..."
+mv Heartbleed/ /root/Downloads/
+
+echo ""
+echo ""
+echo "Moving ModesofOperation UP one directory ..."
+mv ModesofOperation/ /root/Downloads/
+
+echo ""
+echo ""
+echo "Moving dns2proxy-master UP one directory ..."
+mv dns2proxy-master/ /root/Downloads/
+
+echo ""
+echo ""
+echo "Moving hashes UP one directory ..."
+mv hashes/ /root/
 
 echo ""
 echo ""
