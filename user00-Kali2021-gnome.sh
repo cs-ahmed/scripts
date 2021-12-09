@@ -59,23 +59,23 @@ sudo mv names.txt /root/
 echo ""
 echo ""
 echo "Moving rockyou-75.txt TO /root ..."
-sudo cp rockyou-75.txt /root/Download/
+sudo cp rockyou-75.txt /root/Downloads/rockyou-75.txt
 sudo mv rockyou-75.txt /root/
 
 echo ""
 echo ""
 echo "Moving Heartbleed TO /root ..."
-sudo mv Heartbleed/ /root/Download/
+sudo mv Heartbleed/ /root/Downloads/
 
 echo ""
 echo ""
 echo "Moving ModesofOperation TO /root ..."
-sudo mv ModesofOperation/ /root/Download/
+sudo mv ModesofOperation/ /root/Downloads/
 
 echo ""
 echo ""
 echo "Moving dns2proxy-master TO /root ..."
-sudo mv dns2proxy-master/ /root/Download/
+sudo mv dns2proxy-master/ /root/Downloads/
 
 echo ""
 echo ""
@@ -85,7 +85,7 @@ sudo mv hashes/ /root/
 echo ""
 echo ""
 echo "Moving README_for_gnome.txt TO Desktop ..."
-sudo mv kali2021_autologin_files/README_for_gnome.txt /root/Desktop/
+sudo mv kali2021_autologin_files/README_for_gnome.txt /root/Desktop/README_for_gnome.txt
 
 echo ""
 echo "Current IP Configuration ..."
