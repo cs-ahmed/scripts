@@ -26,6 +26,11 @@ echo ""
 sudo apt-get install -y openvpn network-manager-openvpn network-manager-openvpn-gnome
 
 echo ""
+echo "RESTARTING network-manager..."
+echo ""
+sudo service network-manager restart
+
+echo ""
 echo ""
 echo "ALLOWING ROOT SSH ..."
 sudo echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
