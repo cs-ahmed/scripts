@@ -21,6 +21,11 @@ echo ""
 sudo apt -y install open-vm-tools
 
 echo ""
+echo "INSTALLING openvpn packages..."
+echo ""
+sudo apt-get install -y openvpn network-manager-openvpn network-manager-openvpn-gnome
+
+echo ""
 echo ""
 echo "ALLOWING ROOT SSH ..."
 sudo echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
