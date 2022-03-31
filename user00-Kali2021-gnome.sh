@@ -16,6 +16,16 @@ dhclient -r
 dhclient
 
 echo ""
+echo "INSTALLING pip..."
+echo ""
+sudo apt -y install python3-pip
+
+echo ""
+echo "INSTALLING dnspython..."
+echo ""
+sudo apt -y install dnspython
+
+echo ""
 echo "INSTALLING open-vm-tools..."
 echo ""
 sudo apt -y install open-vm-tools
