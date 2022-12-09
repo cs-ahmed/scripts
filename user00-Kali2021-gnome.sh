@@ -41,6 +41,11 @@ echo ""
 sudo service network-manager restart
 
 echo ""
+echo "INSTALLING binutils for SSH-MITM..."
+echo ""
+sudo apt -y install binutils
+
+echo ""
 echo ""
 echo "ALLOWING ROOT SSH ..."
 sudo echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
