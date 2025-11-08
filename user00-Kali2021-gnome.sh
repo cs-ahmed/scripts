@@ -20,6 +20,11 @@ dhclient -r
 dhclient
 
 echo ""
+echo "SUDO APT UDATE..."
+echo ""
+sudo apt-get -y update
+
+echo ""
 echo "INSTALLING pip..."
 echo ""
 sudo apt -y install python3-pip
@@ -33,6 +38,11 @@ echo ""
 echo "INSTALLING open-vm-tools..."
 echo ""
 sudo apt -y install open-vm-tools
+
+echo ""
+echo "INSTALLING ghostscript & sslstrip & slowloris ..."
+echo ""
+sudo apt -y install ghostscript sslstrip slowloris
 
 echo ""
 echo "INSTALLING openvpn packages..."
@@ -78,18 +88,44 @@ echo ""
 sudo mv /etc/gdm3/daemon.conf /etc/gdm3/daemon-OLD.conf
 sudo mv kali2021_autologin_files/daemon.conf /etc/gdm3/
 
+echo ""
+echo "Grabbing the pcaps directory..."
+echo ""
+wget  -P  https://kryptacademy.s3.us-east-2.amazonaws.com/resources/pcaps.zip
+unzip /root/Downloads/pcaps.zip -d /root/Downloads/pcaps.zip
+rm /root/Downloads/pcaps.zip
+#sudo mv pcaps/ /root/Downloads/
+
 
 echo ""
 echo ""
-echo "Moving names.txt UP one directory ..."
+echo "Moving names.txt TO /root ..."
 sudo mv names.txt /root/
-
 
 echo ""
 echo ""
 echo "Moving rockyou-75.txt TO /root ..."
-#sudo cp rockyou-75.txt /root/Downloads/
 sudo mv rockyou-75.txt /root/
+
+echo ""
+echo ""
+echo "Moving Nessus.txt TO /root ..."
+sudo mv Nessus.txt /root/
+
+echo ""
+echo ""
+echo "Download Nessus 10.0.2 TO /root/Downloads ..."
+wget -P /root/Downloads/ https://kryptacademy.s3.us-east-2.amazonaws.com/resources/Nessus-10.0.2-debian6_amd64.deb 
+
+echo ""
+echo ""
+echo "Installing Nessus ..."
+sudo apt install -f ./Nessus_amd64.deb
+
+echo ""
+echo ""
+echo "Moving metasploit.txt TO /root ..."
+sudo mv metasploit.txt /root/
 
 echo ""
 echo ""
@@ -114,7 +150,7 @@ sudo mv hashes/ /root/
 echo ""
 echo ""
 echo "Moving change_hostname file TO /root/Desktop/ ..."
-sudo mv CHANGE HOSTNAME.txt /root/Desktop/
+sudo mv CHANGE_HOSTNAME.txt /root/Desktop/
 
 echo ""
 echo ""
