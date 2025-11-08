@@ -26,24 +26,14 @@ echo ""
 sudo apt-get -y update
 
 echo ""
-echo "INSTALLING pip..."
-echo ""
-sudo apt -y install python3-pip
-
-echo ""
-echo "INSTALLING dnspython..."
-echo ""
-sudo apt -y install dnspython
-
-echo ""
 echo "INSTALLING open-vm-tools..."
 echo ""
 sudo apt -y install open-vm-tools
 
 echo ""
-echo "INSTALLING ghostscript & sslstrip & slowloris ..."
+echo "INSTALLING sslstrip & slowloris & network-manager ..."
 echo ""
-sudo apt -y install ghostscript sslstrip slowloris
+sudo apt -y install sslstrip slowloris network-manager
 
 echo ""
 echo "INSTALLING openvpn packages..."
@@ -54,11 +44,6 @@ echo ""
 echo "RESTARTING Network-Manager..."
 echo ""
 sudo systemctl restart Network-Manager
-
-echo ""
-echo "INSTALLING binutils for SSH-MITM..."
-echo ""
-sudo apt -y install binutils
 
 echo ""
 echo ""
@@ -92,7 +77,7 @@ sudo mv kali2021_autologin_files/daemon.conf /etc/gdm3/
 echo ""
 echo "Grabbing the pcaps directory..."
 echo ""
-sudo wget  -P  https://kryptacademy.s3.us-east-2.amazonaws.com/resources/pcaps.zip
+sudo wget  -P /root/Downloads/ https://kryptacademy.s3.us-east-2.amazonaws.com/resources/pcaps.zip
 sudo unzip /root/Downloads/pcaps.zip -d /root/Downloads/pcaps.zip
 sudo rm /root/Downloads/pcaps.zip
 #sudo mv pcaps/ /root/Downloads/
