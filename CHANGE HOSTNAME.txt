@@ -1,0 +1,20 @@
+If this file is on your desktop, you need to change the hostname of your Kali VM.
+
+1)
+Change the machine's hostname to your "first name" followed by your "last name". To change the hostname you should use the following command:
+
+hostnamectl set-hostname $NEW_HOSTNAME
+
+where the $NEW_HOSTNAME is your "FirstLast" name
+
+Example: if your first name is Freddy and your last name is Henderson, then you should run the following command:
+
+hostnamectl set-hostname FreddyHenderson
+
+2)
+Delete this file.  If you ever reverted this machine to it's original state, this file will be on your desktop to remind you to change the hostname of your Kali VM.
+
+3)
+Reboot the Kali21 virtual machine using the "reboot" command.
+
+Bye for now :)
