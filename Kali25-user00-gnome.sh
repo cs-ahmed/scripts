@@ -138,7 +138,7 @@ sudo mv hashes/ /root/
 echo ""
 echo ""
 echo "Moving change_hostname file TO /root/Desktop/ ..."
-sudo mv CHANGE_HOSTNAME.txt /root/Desktop
+sudo mv ChangeHostname.txt /root/Desktop/
 
 echo ""
 echo ""
