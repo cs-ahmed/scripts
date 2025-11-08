@@ -48,7 +48,9 @@ sudo systemctl restart NetworkManager
 echo ""
 echo ""
 echo "ALLOWING ROOT SSH ..."
-sudo echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
+
+sudo "PermitRootLogin yes" | sudo tee -a /etc/ssh/sshd_config
+#sudo echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
 #sudo service ssh restart
 #echo "Go to /etc/ssh/sshd_config and look for the line 
 #echo "PermitRootLogin no"
@@ -136,7 +138,7 @@ sudo mv hashes/ /root/
 echo ""
 echo ""
 echo "Moving change_hostname file TO /root/Desktop/ ..."
-sudo mv CHANGE_HOSTNAME.txt /root/Desktop/
+sudo mv CHANGE_HOSTNAME.txt /root/Desktop
 
 echo ""
 echo ""
