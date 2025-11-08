@@ -175,6 +175,6 @@ rm -R ../scripts/
 echo ""
 echo ""
 echo "DON'T FORGET rm ./.zsh_history"
-echo "Close this terminal, open a new one, the run rm./.zsh_history"
+echo "Close this terminal, open a new one, the run rm ./.zsh_history"
 rm ./.zsh_history
 echo "Then, reboot"
