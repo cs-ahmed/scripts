@@ -43,7 +43,7 @@ sudo apt-get install -y openvpn network-manager-openvpn network-manager-openvpn-
 echo ""
 echo "RESTARTING Network-Manager..."
 echo ""
-sudo systemctl restart Network-Manager
+sudo systemctl restart NetworkManager
 
 echo ""
 echo ""
