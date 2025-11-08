@@ -31,9 +31,9 @@ echo ""
 sudo apt -y install open-vm-tools
 
 echo ""
-echo "INSTALLING sslstrip & slowloris & network-manager ..."
+echo "INSTALLING sslstrip & slowloris & network-manager & gedit ..."
 echo ""
-sudo apt -y install sslstrip slowloris network-manager
+sudo apt -y install sslstrip slowloris network-manager gedit
 
 echo ""
 echo "INSTALLING openvpn packages..."
