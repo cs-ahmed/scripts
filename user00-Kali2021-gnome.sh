@@ -1,5 +1,9 @@
 #!/bin/bash
 
+
+## CURRENTLY IN USE
+
+
 echo "ALLOWING root LOGIN"
 sudo apt install -y kali-root-login
 
@@ -106,6 +110,11 @@ echo ""
 echo ""
 echo "Moving hashes TO /root ..."
 sudo mv hashes/ /root/
+
+echo ""
+echo ""
+echo "Moving change_hostname file TO /root/Desktop/ ..."
+sudo mv CHANGE HOSTNAME.txt /root/Desktop/
 
 echo ""
 echo ""
