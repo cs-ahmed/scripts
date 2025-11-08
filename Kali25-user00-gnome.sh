@@ -31,9 +31,9 @@ echo ""
 sudo apt -y install open-vm-tools
 
 echo ""
-echo "INSTALLING sslstrip & slowloris & network-manager & gedit ..."
+echo "INSTALLING sslstrip & slowloris & network-manager & gedit & gnome-shell-extension-manager ..."
 echo ""
-sudo apt -y install sslstrip slowloris network-manager gedit
+sudo apt -y install sslstrip slowloris network-manager gedit gnome-shell-extension-manager
 
 echo ""
 echo "INSTALLING openvpn packages..."
@@ -77,9 +77,14 @@ sudo mv /etc/gdm3/daemon.conf /etc/gdm3/daemon-OLD.conf
 sudo mv kali2021_autologin_files/daemon.conf /etc/gdm3/
 
 echo ""
+echo "Grabbing the gnome.desktop extension..."
+sudo wget -P /root/Downloads/ https://kryptacademy.s3.us-east-2.amazonaws.com/resources/org.gnome.desktop-icons-enhanced.v5.shell-extension.zip
+sudo gnome-extensions install /root/Downloads/org.gnome.desktop-icons-enhanced.v5.shell-extension.zip
+
+echo ""
 echo "Grabbing the pcaps directory..."
 echo ""
-sudo wget  -P /root/Downloads/ https://kryptacademy.s3.us-east-2.amazonaws.com/resources/pcaps.zip
+sudo wget -P /root/Downloads/ https://kryptacademy.s3.us-east-2.amazonaws.com/resources/pcaps.zip
 sudo unzip /root/Downloads/pcaps.zip -d /root/Downloads/pcaps.zip
 sudo rm /root/Downloads/pcaps.zip
 #sudo mv pcaps/ /root/Downloads/
@@ -108,7 +113,8 @@ sudo wget -P /root/Downloads/ https://kryptacademy.s3.us-east-2.amazonaws.com/re
 echo ""
 echo ""
 echo "Installing Nessus ..."
-sudo apt install -f /root/Downloads/Nessus-10.0.2-debian6_amd64.deb
+sudo dpkg -i /root/Downloads/Nessus-10.0.2-debian6_amd64.deb
+#sudo apt install -f /root/Downloads/Nessus-10.0.2-debian6_amd64.deb
 
 echo ""
 echo ""
@@ -127,7 +133,7 @@ sudo mv ModesofOperation/ /root/Downloads/
 
 echo ""
 echo ""
-echo "Moving dns2proxy-master TO /root ..."
+echo "Moving dns2proxy-master TO /root/Downloads/ ..."
 sudo mv dns2proxy-master/ /root/Downloads/
 
 echo ""
@@ -137,8 +143,8 @@ sudo mv hashes/ /root/
 
 echo ""
 echo ""
-echo "Moving change_hostname file TO /root/Desktop/ ..."
-sudo mv ChangeHostname.txt /root/Desktop/
+echo "Moving change_hostname file TO /root/Downloads/ ..."
+sudo mv CHANGE_HOSTNAME.txt /root/Downloads/
 
 echo ""
 echo ""
