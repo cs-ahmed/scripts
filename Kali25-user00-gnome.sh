@@ -153,11 +153,11 @@ echo ""
 echo "Fixing Cursor Problem..."
 sudo mkdir -p /etc/X11/xorg.conf.d
 sudo touch /etc/X11/xorg.conf.d/20-vmware.conf
-echo >> 'Section "Device"'
-echo >> 'Identifier "VMware SVGA"'
-echo >> 'Driver "vmware"'
-echo >> 'Option "HWCursor" "off"'
-echo >> 'EndSection'
+echo 'Section "Device"' >> /etc/X11/xorg.conf.d/20-vmware.conf
+echo 'Identifier "VMware SVGA"' >> /etc/X11/xorg.conf.d/20-vmware.conf
+echo 'Driver "vmware"' >> /etc/X11/xorg.conf.d/20-vmware.conf
+echo 'Option "HWCursor" "off"' >> /etc/X11/xorg.conf.d/20-vmware.conf
+echo 'EndSection' >> /etc/X11/xorg.conf.d/20-vmware.conf
 
 
 #echo "Don't forget to set screen resolution to 1360x768"
