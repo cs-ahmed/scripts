@@ -1,0 +1,9 @@
+To start metasploit, run the following three commands in the terminal:
+
+service postgresql start
+sudo msfdb init
+msfconsole
+
+===
+
+When you run each command make sure to give it some time to finish its job. Be patient :).

@@ -1,0 +1,7 @@
+Activation code for Nessus Essentials is: NPF2-WC37-SA3F-ZPF5-B4LN
+
+To start Nessus, run:
+sudo /bin/systemctl start nessusd.service
+
+Then, open a browser and navigate to:
+https://localhost:8834
