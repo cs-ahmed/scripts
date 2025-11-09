@@ -40,9 +40,9 @@ echo ""
 sudo apt -y install open-vm-tools
 
 echo ""
-echo "INSTALLING ghostscript & sslstrip & slowloris ..."
+echo "INSTALLING ghostscript & sslstrip & slowloris & gedit ..."
 echo ""
-sudo apt -y install ghostscript sslstrip slowloris
+sudo apt -y install ghostscript sslstrip slowloris gedit
 
 echo ""
 echo "INSTALLING openvpn packages..."
@@ -91,9 +91,9 @@ sudo mv kali2021_autologin_files/daemon.conf /etc/gdm3/
 echo ""
 echo "Grabbing the pcaps directory..."
 echo ""
-wget  -P  https://kryptacademy.s3.us-east-2.amazonaws.com/resources/pcaps.zip
-unzip /root/Downloads/pcaps.zip -d /root/Downloads/pcaps.zip
-rm /root/Downloads/pcaps.zip
+sudo wget -P /root/Downloads/ https://kryptacademy.s3.us-east-2.amazonaws.com/resources/pcaps.zip
+sudo unzip /root/Downloads/pcaps.zip -d /root/Downloads/pcaps.zip
+sudo rm /root/Downloads/pcaps.zip
 #sudo mv pcaps/ /root/Downloads/
 
 
@@ -120,7 +120,8 @@ wget -P /root/Downloads/ https://kryptacademy.s3.us-east-2.amazonaws.com/resourc
 echo ""
 echo ""
 echo "Installing Nessus ..."
-sudo apt install -f ./Nessus_amd64.deb
+sudo dpkg -i /root/Downloads/Nessus-10.0.2-debian6_amd64.deb
+#sudo apt install -f /root/Downloads/Nessus-10.0.2-debian6_amd64.deb
 
 echo ""
 echo ""
