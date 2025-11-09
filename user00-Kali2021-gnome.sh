@@ -3,6 +3,15 @@
 
 ## CURRENTLY IN USE
 
+echo ""
+echo "UPDATE KALI KEY..."
+echo "kali" | sudo -S wget -q -O - https://archive.kali.org/archive-key.asc | sudo apt-key add
+# sudo -S: The -S option tells sudo to read the password from standard input instead of prompting for it interactively.
+
+echo ""
+echo "SUDO APT UDATE..."
+echo ""
+sudo apt-get -y update
 
 echo "ALLOWING root LOGIN"
 sudo apt install -y kali-root-login
@@ -20,11 +29,6 @@ dhclient -r
 dhclient
 
 echo ""
-echo "SUDO APT UDATE..."
-echo ""
-sudo apt-get -y update
-
-echo ""
 echo "INSTALLING pip..."
 echo ""
 sudo apt -y install python3-pip
@@ -37,7 +41,7 @@ sudo apt -y install dnspython
 echo ""
 echo "INSTALLING open-vm-tools..."
 echo ""
-sudo apt -y install open-vm-tools
+sudo apt -y install open-vm-tools open-vm-tools-desktop
 
 echo ""
 echo "INSTALLING ghostscript & sslstrip & slowloris & gedit ..."
@@ -92,7 +96,7 @@ echo ""
 echo "Grabbing the pcaps directory..."
 echo ""
 sudo wget -P /root/Downloads/ https://kryptacademy.s3.us-east-2.amazonaws.com/resources/pcaps.zip
-sudo unzip /root/Downloads/pcaps.zip -d /root/Downloads/pcaps.zip
+sudo unzip /root/Downloads/pcaps.zip -d /root/Downloads/
 sudo rm /root/Downloads/pcaps.zip
 #sudo mv pcaps/ /root/Downloads/
 
@@ -114,7 +118,7 @@ sudo mv Nessus.txt /root/
 
 echo ""
 echo ""
-echo "Download Nessus 10.0.2 TO /root/Downloads ..."
+echo "Download Nessus 10.0.2 TO /root/Downloads/ ..."
 wget -P /root/Downloads/ https://kryptacademy.s3.us-east-2.amazonaws.com/resources/Nessus-10.0.2-debian6_amd64.deb 
 
 echo ""
@@ -150,8 +154,8 @@ sudo mv hashes/ /root/
 
 echo ""
 echo ""
-echo "Moving change_hostname file TO /root/Desktop/ ..."
-sudo mv CHANGE_HOSTNAME.txt /root/Desktop/
+echo "Moving change_hostname file TO /root/ ..."
+sudo mv CHANGE_HOSTNAME.txt /root/
 
 echo ""
 echo ""
@@ -163,7 +167,9 @@ echo "Current IP Configuration ..."
 ifconfig eth0
 
 
-
+## TEST
+sudo gsettings set org.gnome.desktop.session idle-delay 0
+sudo gsettings set org.gnome.desktop.screensaver lock-enabled false
 
 #echo "Don't forget to set screen resolution to 1360x768"
 echo ""
