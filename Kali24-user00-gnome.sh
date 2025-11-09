@@ -64,7 +64,7 @@ echo ""
 echo ""
 echo "ALLOWING ROOT SSH ..."
 
-sudo "PermitRootLogin yes" | sudo tee -a /etc/ssh/sshd_config
+sudo echo "PermitRootLogin yes" | sudo tee -a /etc/ssh/sshd_config
 #sudo echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
 #sudo service ssh restart
 #echo "Go to /etc/ssh/sshd_config and look for the line 
@@ -210,6 +210,10 @@ sudo mv xrandr.sh /root/Downloads/
 #sudo xrandr --addmode Virtual1 "1360x768_60.00"
 #sudo xrandr --output Virtual1 --mode "1360x768_60.00"
 #echo "Should not see any errors above this line!"
+
+sudo cp /kali_wallpaper/kali-metal-dark.png /usr/share/kali-defaults/web/images/
+sudo mv /usr/share/kali-defaults/web/homepage.html /usr/share/kali-defaults/web/homepage-backup.html
+sudo mv /kali2024_files/homepage.html /usr/share/kali-defaults/web/
 
 echo ""
 echo ""
