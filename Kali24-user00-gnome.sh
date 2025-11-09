@@ -88,16 +88,18 @@ echo ""
 sudo mv /etc/gdm3/daemon.conf /etc/gdm3/daemon-OLD.conf
 sudo mv kali2021_autologin_files/daemon.conf /etc/gdm3/
 
-echo ""
-echo "Grabbing the gnome.desktop extension..."
-sudo wget -P /root/Downloads/ https://kryptacademy.s3.us-east-2.amazonaws.com/resources/org.gnome.desktop-icons-enhanced.v5.shell-extension.zip
-sudo gnome-extensions install /root/Downloads/org.gnome.desktop-icons-enhanced.v5.shell-extension.zip
+#echo ""
+#echo "Grabbing the gnome.desktop extension..."
+#sudo wget -P /root/Downloads/ https://kryptacademy.s3.us-east-2.amazonaws.com/resources/org.gnome.desktop-icons-enhanced.v5.shell-extension.zip
+#sudo gnome-extensions install /root/Downloads/org.gnome.desktop-icons-enhanced.v5.shell-extension.zip
 
-echo ""
-echo "Grabbing Google Chrome..."
-sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+#echo ""
+#echo "Grabbing Google Chrome..."
+#sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 echo "Installing Google Chrome..."
-sudo apt install ./google-chrome-stable_current_amd64.deb
+sudo apt -y install google-chrome-stable
+#sudo apt install ./google-chrome-stable_current_amd64.deb
+#sudo rm ./google-chrome-stable_current_amd64.deb
 
 echo ""
 echo "Grabbing the pcaps directory..."
