@@ -29,11 +29,6 @@ sudo dhclient -r
 sleep 5
 echo "(1) dhclient"
 sudo dhclient
-echo "(2) dhclient -r"
-sudo dhclient -r
-sleep 5
-echo "(2) dhclient"
-sudo dhclient
 
 echo ""
 echo "SUDO APT UDATE..."
@@ -90,11 +85,6 @@ echo "ENABLE autologin on Kali Linux..."
 echo ""
 sudo mv /etc/gdm3/daemon.conf /etc/gdm3/daemon-OLD.conf
 sudo mv kali2021_autologin_files/daemon.conf /etc/gdm3/
-
-#echo ""
-#echo "Grabbing the gnome.desktop extension..."
-#sudo wget -P /root/Downloads/ https://kryptacademy.s3.us-east-2.amazonaws.com/resources/org.gnome.desktop-icons-enhanced.v5.shell-extension.zip
-#sudo gnome-extensions install /root/Downloads/org.gnome.desktop-icons-enhanced.v5.shell-extension.zip
 
 echo ""
 echo "Grabbing Google Chrome..."
@@ -180,27 +170,8 @@ ifconfig eth0
 
 echo ""
 echo ""
-echo "Moving xrandr.sh TO /root/Downloads/ ..."
-sudo mv xrandr.sh /root/Downloads/
-
-#echo ""
-#echo "Fixing Cursor Problem..."
-#sudo mkdir -p /etc/X11/xorg.conf.d
-#sudo touch /etc/X11/xorg.conf.d/20-vmware.conf
-#echo 'Section "Device"' >> /etc/X11/xorg.conf.d/20-vmware.conf
-#echo 'Identifier "VMware SVGA"' >> /etc/X11/xorg.conf.d/20-vmware.conf
-#echo 'Driver "vmware"' >> /etc/X11/xorg.conf.d/20-vmware.conf
-#echo 'Option "HWCursor" "off"' >> /etc/X11/xorg.conf.d/20-vmware.conf
-#echo 'EndSection' >> /etc/X11/xorg.conf.d/20-vmware.conf
-
-
-#echo "Don't forget to set screen resolution to 1360x768"
-#echo ""
-#echo ""
-#echo "TO CHANGE RESOLUTION:"
-#echo "sudo xrandr -s 1360x768"
-#echo "OR"
-#echo "sudo xrandr -s 1280x800"
+echo "Moving xrandr.sh TO /root/ ..."
+sudo mv xrandr.sh /root/
 
 #echo ""
 #echo ""
