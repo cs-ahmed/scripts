@@ -25,10 +25,12 @@ echo ""
 echo "RENEW IP ..."
 echo "(1) dhclient -r"
 sudo dhclient -r
+sleep 5
 echo "(1) dhclient"
 sudo dhclient
 echo "(2) dhclient -r"
 sudo dhclient -r
+sleep 5
 echo "(2) dhclient"
 sudo dhclient
 
@@ -93,13 +95,13 @@ sudo mv kali2021_autologin_files/daemon.conf /etc/gdm3/
 #sudo wget -P /root/Downloads/ https://kryptacademy.s3.us-east-2.amazonaws.com/resources/org.gnome.desktop-icons-enhanced.v5.shell-extension.zip
 #sudo gnome-extensions install /root/Downloads/org.gnome.desktop-icons-enhanced.v5.shell-extension.zip
 
-#echo ""
-#echo "Grabbing Google Chrome..."
-#sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+echo ""
+echo "Grabbing Google Chrome..."
+sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 echo "Installing Google Chrome..."
-sudo apt -y install google-chrome-stable
-#sudo apt install ./google-chrome-stable_current_amd64.deb
-#sudo rm ./google-chrome-stable_current_amd64.deb
+# NOT WORKING: sudo apt -y install google-chrome-stable
+sudo apt -y install ./google-chrome-stable_current_amd64.deb
+sudo rm ./google-chrome-stable_current_amd64.deb
 
 echo ""
 echo "Grabbing the pcaps directory..."
@@ -194,10 +196,14 @@ ifconfig eth0
 #echo "OR"
 #echo "sudo xrandr -s 1280x800"
 
+echo ""
+echo ""
+echo "Setting up 1360x768 resolution ..."
 sudo cvt 1360 768
 sudo xrandr --newmode "1360x768_60.00" 85.50 1360 1432 1568 1776 768 771 781 798 -hsync +vsync
 sudo xrandr --addmode Virtual1 "1360x768_60.00"
 sudo xrandr --output Virtual1 --mode "1360x768_60.00"
+echo "Should not see any errors above this line!"
 
 echo ""
 echo ""
