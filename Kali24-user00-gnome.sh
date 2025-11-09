@@ -42,7 +42,7 @@ sudo apt-get -y update
 echo ""
 echo "INSTALLING open-vm-tools..."
 echo ""
-sudo apt -y install open-vm-tools
+sudo apt -y install open-vm-tools open-vm-tools-desktop
 
 echo ""
 echo "INSTALLING sslstrip & slowloris & network-manager & gedit ..."
@@ -107,7 +107,7 @@ echo ""
 echo "Grabbing the pcaps directory..."
 echo ""
 sudo wget -P /root/Downloads/ https://kryptacademy.s3.us-east-2.amazonaws.com/resources/pcaps.zip
-sudo unzip /root/Downloads/pcaps.zip -d /root/Downloads/pcaps
+sudo unzip /root/Downloads/pcaps.zip -d /root/Downloads/
 sudo rm /root/Downloads/pcaps.zip
 #sudo mv pcaps/ /root/Downloads/
 
@@ -196,14 +196,14 @@ ifconfig eth0
 #echo "OR"
 #echo "sudo xrandr -s 1280x800"
 
-echo ""
-echo ""
-echo "Setting up 1360x768 resolution ..."
-sudo cvt 1360 768
-sudo xrandr --newmode "1360x768_60.00" 85.50 1360 1432 1568 1776 768 771 781 798 -hsync +vsync
-sudo xrandr --addmode Virtual1 "1360x768_60.00"
-sudo xrandr --output Virtual1 --mode "1360x768_60.00"
-echo "Should not see any errors above this line!"
+#echo ""
+#echo ""
+#echo "Setting up 1360x768 resolution ..."
+#sudo cvt 1360 768
+#sudo xrandr --newmode "1360x768_60.00" 85.50 1360 1432 1568 1776 768 771 781 798 -hsync +vsync
+#sudo xrandr --addmode Virtual1 "1360x768_60.00"
+#sudo xrandr --output Virtual1 --mode "1360x768_60.00"
+#echo "Should not see any errors above this line!"
 
 echo ""
 echo ""
@@ -220,6 +220,6 @@ rm -R ../scripts/
 echo ""
 echo ""
 echo "DON'T FORGET rm ./.zsh_history"
-echo "Close this terminal, open a new one, the run rm ./.zsh_history"
+echo "Close this terminal, open a new one, then run rm ./.zsh_history"
 rm ./.zsh_history
 echo "Then, reboot"
