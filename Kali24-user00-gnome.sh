@@ -177,6 +177,11 @@ echo ""
 echo "Current IP Configuration ..."
 ifconfig eth0
 
+echo ""
+echo ""
+echo "Moving xrandr TO /root/Downloads/ ..."
+sudo mv xrandr /root/Downloads/
+
 #echo ""
 #echo "Fixing Cursor Problem..."
 #sudo mkdir -p /etc/X11/xorg.conf.d
