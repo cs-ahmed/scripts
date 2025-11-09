@@ -23,10 +23,13 @@ echo -e "toor\ntoor" | sudo passwd
  
 echo ""
 echo "RENEW IP ..."
-echo ""
+echo "(1) dhclient -r"
 dhclient -r
+echo "(1) dhclient"
 dhclient
+echo "(2) dhclient -r"
 dhclient -r
+echo "(2) dhclient"
 dhclient
 
 echo ""
@@ -158,8 +161,8 @@ sudo mv hashes/ /root/
 
 echo ""
 echo ""
-echo "Moving change_hostname file TO /root/Desktop/ ..."
-sudo mv CHANGE_HOSTNAME.txt /root/Desktop/
+echo "Moving change_hostname file TO /root/Downloads/ ..."
+sudo mv CHANGE_HOSTNAME.txt /root/Downloads/
 
 echo ""
 echo ""
@@ -182,12 +185,17 @@ ifconfig eth0
 
 
 #echo "Don't forget to set screen resolution to 1360x768"
-echo ""
-echo ""
-echo "TO CHANGE RESOLUTION:"
-echo "sudo xrandr -s 1360x768"
-echo "OR"
-echo "sudo xrandr -s 1280x800"
+#echo ""
+#echo ""
+#echo "TO CHANGE RESOLUTION:"
+#echo "sudo xrandr -s 1360x768"
+#echo "OR"
+#echo "sudo xrandr -s 1280x800"
+
+sudo cvt 1360 768
+sudo xrandr --newmode "1360x768_60.00" 85.50 1360 1432 1568 1776 768 771 781 798 -hsync +vsync
+sudo xrandr --addmode Virtual1 "1360x768_60.00"
+sudo xrandr --output Virtual1 --mode "1360x768_60.00"
 
 echo ""
 echo ""
