@@ -15,6 +15,6 @@ hostnamectl set-hostname FreddyHenderson
 Delete this file.  If you ever reverted this machine to it's original state, this file will be on your desktop to remind you to change the hostname of your Kali VM.
 
 3)
-Reboot the Kali21 virtual machine using the "reboot" command.
+Reboot the Kali virtual machine using the "reboot" command.
 
 Bye for now :)
