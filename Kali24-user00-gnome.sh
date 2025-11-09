@@ -217,6 +217,10 @@ echo "Go to: SETTINGS > POWER"
 echo "1. Change Blank Screen to Never"
 echo "2. Change Automatic Suspend to Off"
 
+## TEST
+sudo gsettings set org.gnome.desktop.session idle-delay 0
+sudo gsettings set org.gnome.desktop.screensaver lock-enabled false
+
 echo ""
 echo ""
 echo "REMOVING MYSELF!"
