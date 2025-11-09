@@ -91,7 +91,7 @@ echo ""
 echo "Grabbing the pcaps directory..."
 echo ""
 sudo wget -P /root/Downloads/ https://kryptacademy.s3.us-east-2.amazonaws.com/resources/pcaps.zip
-sudo unzip /root/Downloads/pcaps.zip -d /root/Downloads/pcaps.zip
+sudo unzip /root/Downloads/pcaps.zip -d /root/Downloads/pcaps
 sudo rm /root/Downloads/pcaps.zip
 #sudo mv pcaps/ /root/Downloads/
 
