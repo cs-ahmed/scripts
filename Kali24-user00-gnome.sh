@@ -24,13 +24,13 @@ echo -e "toor\ntoor" | sudo passwd
 echo ""
 echo "RENEW IP ..."
 echo "(1) dhclient -r"
-dhclient -r
+sudo dhclient -r
 echo "(1) dhclient"
-dhclient
+sudo dhclient
 echo "(2) dhclient -r"
-dhclient -r
+sudo dhclient -r
 echo "(2) dhclient"
-dhclient
+sudo dhclient
 
 echo ""
 echo "SUDO APT UDATE..."
