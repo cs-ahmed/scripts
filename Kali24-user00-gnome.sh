@@ -5,7 +5,8 @@
 
 echo ""
 echo "UPDATE KALI KEY..."
-sudo wget -q -O - https://archive.kali.org/archive-key.asc | sudo apt-key add
+echo "kali" | sudo -S wget -q -O - https://archive.kali.org/archive-key.asc | sudo apt-key add
+# sudo -S: The -S option tells sudo to read the password from standard input instead of prompting for it interactively.
 
 echo ""
 echo "SUDO APT UDATE..."
