@@ -43,7 +43,7 @@ sudo apt -y install open-vm-tools open-vm-tools-desktop
 echo ""
 echo "INSTALLING sslstrip & slowloris & network-manager & gedit ..."
 echo ""
-sudo apt -y install sslstrip slowloris network-manager gedit
+sudo apt -y install sslstrip slowloris network-manager gedit tmux
 
 echo ""
 echo "INSTALLING openvpn packages..."
