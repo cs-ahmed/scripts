@@ -136,12 +136,12 @@ sudo mv metasploit.txt /root/
 
 echo ""
 echo ""
-echo "Moving Heartbleed TO /root ..."
+echo "Moving Heartbleed TO /root/Downloads/ ..."
 sudo mv Heartbleed/ /root/Downloads/
 
 echo ""
 echo ""
-echo "Moving ModesofOperation TO /root ..."
+echo "Moving ModesofOperation TO /root/Downloads/ ..."
 sudo mv ModesofOperation/ /root/Downloads/
 
 echo ""
@@ -153,6 +153,11 @@ echo ""
 echo ""
 echo "Moving hashes TO /root ..."
 sudo mv hashes/ /root/
+
+echo ""
+echo ""
+echo "Moving SSH_Relay_Server TO /root/Downloads/ ..."
+sudo mv ssh_relay_server.py /root/Downloads/
 
 echo ""
 echo ""
