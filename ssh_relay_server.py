@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+
+## Author: Allen Jung (ALJ225@pitt.edu)
+
 import os
 import re
 import socket
